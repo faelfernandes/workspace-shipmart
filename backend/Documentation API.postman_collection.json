@@ -1,0 +1,211 @@
+{
+	"info": {
+		"_postman_id": "b39291c2-4321-48c8-bb08-e59fb64bf5e0",
+		"name": "Documentation API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18710906",
+		"_collection_link": "https://galactic-rocket-966621.postman.co/workspace/BigBang-Digital~c0c7aa9e-a709-4ed4-ada5-dec81d42537e/collection/18710906-b39291c2-4321-48c8-bb08-e59fb64bf5e0?action=share&source=collection_link&creator=18710906"
+	},
+	"item": [
+		{
+			"name": "Contact",
+			"item": [
+				{
+					"name": "Delete Contact",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "X-CSRF-TOKEN",
+								"value": "n6g7MbmuRLHp2dZgAedyIBiZyh99gEhB94Nt0di8",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/contacts/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"contacts",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Contact",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"João da Silva\",\r\n    \"email\": \"joao.silva@example.com\",\r\n    \"phone\": \"11999999999\",\r\n    \"address\": {\r\n        \"zip_code\": \"12345679\",\r\n        \"state\": \"SP\",\r\n        \"city\": \"São Paulo\",\r\n        \"neighborhood\": \"Centro\",\r\n        \"street\": \"Rua Exemplo\",\r\n        \"number\": \"123\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/api/contacts/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"contacts",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Contact",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"João da Silva\",\n    \"email\": \"joao.silva@example.com\",\n    \"phone\": \"(11)999999999\",\n    \"address\": {\n        \"zip_code\": \"12345-678\",\n        \"state\": \"SP\",\n        \"city\": \"São Paulo\",\n        \"neighborhood\": \"Centro\",\n        \"street\": \"Rua Exemplo\",\n        \"number\": \"123\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/contacts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"contacts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Export Contact",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"contacts\": [1]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/api/contacts/export",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"contacts",
+								"export"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Paginate Contact",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-CSRF-TOKEN",
+								"value": "n6g7MbmuRLHp2dZgAedyIBiZyh99gEhB94Nt0di8",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/contacts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"contacts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Contact By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/api/contacts/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"contacts",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Queues",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/api/queue/emails",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"queue",
+								"emails"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
