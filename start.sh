@@ -14,6 +14,13 @@ if [ ! -f database/database.sqlite ]; then
     touch database/database.sqlite
 fi
 
+# Configurar frontend
+echo "📦 Configurando frontend..."
+cd ../frontend
+if [ ! -f .env.local ]; then
+    cp .env.example .env.local
+fi
+
 # Construir e iniciar containers
 echo "🐳 Construindo containers..."
 cd ..
