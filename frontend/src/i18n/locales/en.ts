@@ -1,0 +1,86 @@
+export default {
+  navigation: {
+    contacts: 'Contacts',
+    queues: 'Queues',
+  },
+  contacts: {
+    title: 'Contacts',
+    new: 'New Contact',
+    edit: 'Edit Contact',
+    list: {
+      total: '{total} contacts found',
+      name: 'Name',
+      email: 'Email',
+      phone: 'Phone',
+      location: 'City/State',
+      actions: 'Actions',
+      edit: 'Edit',
+      delete: 'Delete',
+      export: 'Export Selected',
+      confirmDelete: 'Are you sure you want to delete this contact?',
+      noContactsSelected: 'Select at least one contact to export',
+    },
+    form: {
+      name: 'Name',
+      email: 'Email',
+      phone: 'Phone',
+      zipCode: 'ZIP Code',
+      state: 'State',
+      city: 'City',
+      neighborhood: 'Neighborhood',
+      address: 'Address',
+      number: 'Number',
+      save: 'Save',
+      cancel: 'Cancel',
+      selectState: 'Select a state',
+    },
+    filters: {
+      search: 'Search',
+      searchPlaceholder: 'Name or email...',
+      state: 'State',
+      city: 'City',
+      allStates: 'All states',
+      allCities: 'All cities',
+    },
+    validation: {
+      required: '{field} is required',
+      invalidEmail: 'Invalid email',
+      invalidZipCode: 'Invalid ZIP code',
+      zipCodeNotFound: 'ZIP code not found',
+    },
+    messages: {
+      createSuccess: 'Contact created successfully',
+      updateSuccess: 'Contact updated successfully',
+      saveError: 'Error saving contact',
+      deleteSuccess: 'Contact deleted successfully',
+      deleteError: 'Error deleting contact',
+      exportSuccess: 'Contacts exported successfully',
+      exportError: 'Error exporting contacts',
+      loadError: 'Error loading contact',
+    },
+  },
+  common: {
+    loading: 'Loading...',
+    error: 'An error occurred',
+    success: 'Operation completed successfully',
+  },
+  pagination: {
+    showing: 'Showing',
+    to: 'to',
+    of: 'of',
+    results: 'results',
+    previous: 'Previous',
+    next: 'Next',
+  },
+  queue: {
+    emails: {
+      title: 'Email Queue',
+      totalJobs: 'Total of emails in the queue: {total}',
+      queue: 'Queue',
+      attempts: 'Attempts',
+      createdAt: 'Created at',
+      to: 'To',
+      subject: 'Subject'
+    }
+  }
+}

@@ -1,0 +1,86 @@
+export default {
+  navigation: {
+    contacts: 'Contatos',
+    queues: 'Filas',
+  },
+  contacts: {
+    title: 'Contatos',
+    new: 'Novo Contato',
+    edit: 'Editar Contato',
+    list: {
+      total: '{total} contatos encontrados',
+      name: 'Nome',
+      email: 'Email',
+      phone: 'Telefone',
+      location: 'Cidade/Estado',
+      actions: 'Ações',
+      edit: 'Editar',
+      delete: 'Excluir',
+      export: 'Exportar Selecionados',
+      confirmDelete: 'Tem certeza que deseja excluir este contato?',
+      noContactsSelected: 'Selecione pelo menos um contato para exportar',
+    },
+    form: {
+      name: 'Nome',
+      email: 'Email',
+      phone: 'Telefone',
+      zipCode: 'CEP',
+      state: 'Estado',
+      city: 'Cidade',
+      neighborhood: 'Bairro',
+      address: 'Endereço',
+      number: 'Número',
+      save: 'Salvar',
+      cancel: 'Cancelar',
+      selectState: 'Selecione um estado',
+    },
+    filters: {
+      search: 'Buscar',
+      searchPlaceholder: 'Nome ou email...',
+      state: 'Estado',
+      city: 'Cidade',
+      allStates: 'Todos os estados',
+      allCities: 'Todas as cidades',
+    },
+    validation: {
+      required: '{field} é obrigatório',
+      invalidEmail: 'Email inválido',
+      invalidZipCode: 'CEP inválido',
+      zipCodeNotFound: 'CEP não encontrado',
+    },
+    messages: {
+      createSuccess: 'Contato criado com sucesso',
+      updateSuccess: 'Contato atualizado com sucesso',
+      saveError: 'Erro ao salvar contato',
+      deleteSuccess: 'Contato excluído com sucesso',
+      deleteError: 'Erro ao excluir contato',
+      exportSuccess: 'Contatos exportados com sucesso',
+      exportError: 'Erro ao exportar contatos',
+      loadError: 'Erro ao carregar contato',
+    },
+  },
+  common: {
+    loading: 'Carregando...',
+    error: 'Ocorreu um erro',
+    success: 'Operação realizada com sucesso',
+  },
+  pagination: {
+    showing: 'Mostrando',
+    to: 'até',
+    of: 'de',
+    results: 'resultados',
+    previous: 'Anterior',
+    next: 'Próximo',
+  },
+  queue: {
+    emails: {
+      title: 'Fila de Emails',
+      totalJobs: 'Total de emails na fila: {total}',
+      queue: 'Fila',
+      attempts: 'Tentativas',
+      createdAt: 'Criado em',
+      to: 'Para',
+      subject: 'Assunto'
+    }
+  }
+}
