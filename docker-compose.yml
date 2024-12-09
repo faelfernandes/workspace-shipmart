@@ -14,7 +14,7 @@ services:
       - ./backend/.env
     networks:
       - app-network
-    command: php artisan serve --host=0.0.0.0 --port=8000
+    command: sh -c "php artisan serve --host=0.0.0.0 --port=8000"
 
   # Serviço do frontend (Vue 3 com Vite)
   frontend:
