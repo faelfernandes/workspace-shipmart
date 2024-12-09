@@ -17,8 +17,12 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
 WORKDIR /var/www/html
 
+COPY composer.* ./
+
+RUN composer install --no-scripts --no-autoloader
+
 COPY . .
 
-RUN composer install --no-interaction --no-scripts
+RUN composer dump-autoload --optimize
 
 RUN chown -R www-data:www-data /var/www/html/storage

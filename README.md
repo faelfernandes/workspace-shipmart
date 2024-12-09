@@ -12,7 +12,7 @@ Sistema de agenda de contatos desenvolvido com Laravel 11 e Vue 3.
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/
+git clone https://github.com/faelfernandes/workspace-shipmart
 ```
 
 2. Navegue até o diretório do projeto:

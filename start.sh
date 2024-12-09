@@ -35,4 +35,4 @@ docker exec backend php artisan db:seed
 echo "✅ Ambiente iniciado com sucesso!"
 echo "📝 Frontend: http://localhost:3000"
 echo "🔌 Backend: http://localhost:8000"
-echo "📨 Fila de emails rodando em background" 
+# echo "📨 Fila de emails rodando em background" 
